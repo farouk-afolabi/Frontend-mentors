@@ -1,0 +1,33 @@
+body { font-family : "open Sans",sans-serif ;
+    font-weight: 400;
+    margin: 0;
+    background-color:black;
+    padding:20px;
+    color:white;
+    text-align: center;
+}
+#logo {float: left;}
+ul { list-style-type: none;
+    margin:0;
+    float:right;
+ display:inline; 
+     font-size:30px; 
+     }
+h3, p, { font-family: "Raleway", sans-serif;
+    font-weight:700;
+    text-align: center;
+    color: blue;}
+
+    button {
+        color:#fff;
+        background: blue; 
+        padding :;
+        border: 1rem;
+}
+a { color: hsl(228, 45%, 44%); }
+
+ {display:block;
+float:right;}
+.main{display:block ;}
+.sub{display:flex;}
+
