@@ -1,33 +1,150 @@
-body { font-family : "open Sans",sans-serif ;
+@import url("https://fonts.google.com/specimen/Raleway");
+@import url("https://fonts.google.com/specimen/Open+Sans");
+
+* {
+box-sizing: border-box;
+}
+body { 
+    font-family : "Open sans",sans-serif ;
+    font-size: 14px;
+    text-decoration:none ;
+    
     font-weight: 400;
     margin: 0;
-    background-color:black;
-    padding:20px;
+    background-color:#181f2a;
+    padding:0;
     color:white;
     text-align: center;
 }
-#logo {float: left;}
+
+a{
+    text-decoration: none;
+}
+ 
+
 ul { list-style-type: none;
     margin:0;
-    float:right;
- display:inline; 
-     font-size:30px; 
-     }
-h2,h3, p, { font-family: "Raleway", sans-serif;
-    font-weight:700;
-    text-align: center;
-    color: blue;}
+}
 
     button {
         color:#fff;
         background: blue; 
-        padding :;
-        border: 1rem;
-}
-a { color: hsl(228, 45%, 44%); }
+        padding: 10px 30px;
+        border: none;
+border-radius: 2px;
+    }
+    input { padding: 8px 20px;
+        border-radius: 2px ;
+        border: 1px solid var(--light_gray);
 
- {display:block;
-float:right;}
-.main{display:block ;}
-.sub{display:flex;}
+    }
+    img { 
+        max-width: 100%;
+    }
+    h3,
+    h6,
+    button,
+    nav {
+        font-family: "Raleway" , sans-serif;
+        color: var(--very_dark_blue);
+    }
+    button,
+    nav { 
+        font-weight: 400;
+    }
+    h3{
+        font-size: 40px;
+    }
+    p,
+    nav,
+    button,
+    a {
+        font-size:12px;
+        color: var(--very_dark_blue)
+    }
+    #logo {display: flex;}
+    nav {margin-bottom: 100px;}
+    nav ul {display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    nav ul li {
+        margin right: 30px;
+    }
 
+/* navigation */
+.navigation{font-family: ;
+    font-weight:400;
+    }
+    
+     .logo{;}
+     .nav {;}
+     
+     
+     /* End of navigation */
+     
+     
+     /* main banner */
+    
+     .main-banner{align-items:center;
+    justify-content: space-between;}
+     .main {
+         max-width: 100%;
+         width: 1000px;
+         margin: 0 auto;
+         padding :30px;
+    }
+     .mains {;}
+     .title{;}
+     p {;}
+     .btn {color;}
+     header {margin:30px;}
+     
+     h6{
+         font-size: 30px;}
+     span {;}
+     
+     /* End of main banner */
+     
+     
+     /* services */
+     .services{ 
+         background: var(--light_grayish_blue);
+         margin: 100px 0 0;
+         padding: 40px 0;
+         position: relative;
+    }
+     .service {display: ;}
+    
+     /* End of services */
+    
+     /* sub banner */
+     .sub-banner{;}
+     .sub{;}
+     .subs{;}
+    /*End of sub banner */
+    
+    
+    /* Testimonials */
+    .testimonials {;}
+    .test {;}
+    /* End of testimonials */
+    
+    
+    /* contact */
+    .subscribe{;}
+    
+    /* End of contact */
+    
+    
+    /* footer */
+    .footer {text-align: left;}
+    .logo {
+        width: 30%;
+      }
+    .footer-top{flex-direction: column;}
+    .footer-bottom{;}
+    .footer-bottom-right{;}
+    .contact{;}
+    .social{justify-content: center;}
+    .attribution{;}
