@@ -1,11 +1,10 @@
-@import url("https://fonts.google.com/specimen/Raleway");
-@import url("https://fonts.google.com/specimen/Open+Sans");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Raleway:wght@100;200;400&display=swap');
 
 * {
 box-sizing: border-box;
 }
 body { 
-    font-family : "Open sans",sans-serif ;
+    font-family : 'Open Sans',sans-serif ;
     font-size: 14px;
     text-decoration:none ;
     
@@ -45,7 +44,7 @@ border-radius: 2px;
     h6,
     button,
     nav {
-        font-family: "Raleway" , sans-serif;
+        font-family: 'Raleway' , sans-serif;
         color: var(--very_dark_blue);
     }
     button,
@@ -67,6 +66,7 @@ border-radius: 2px;
     nav ul {display: flex;
         justify-content: flex-end;
         align-items: center;
+        margin-right: ;
     }
     nav ul li {
         margin right: 30px;
@@ -109,42 +109,55 @@ border-radius: 2px;
      
      /* services */
      .services{ 
-         background: var(--light_grayish_blue);
+         background: ;
          margin: 100px 0 0;
          padding: 40px 0;
          position: relative;
     }
-     .service {display: ;}
+     .service { margin: auto;
+        padding: 40px 20px 20px 20px ;
+         display: ;}
+     .service1 {display:inline-flex;}
     
      /* End of services */
     
      /* sub banner */
-     .sub-banner{;}
+     .sub-banner{display: inline-flex;}
      .sub{;}
      .subs{;}
     /*End of sub banner */
     
     
     /* Testimonials */
-    .testimonials {;}
+    .testimonials {display:inline-flex;}
     .test {;}
     /* End of testimonials */
     
     
     /* contact */
-    .subscribe{;}
+    .subscribe{margin:0 auto;
+        border-radius: 8px;
+    border: 2px solid blue;}
     
     /* End of contact */
     
     
     /* footer */
-    .footer {text-align: left;}
+    .footer {
+        display: flex;
+        margin:0 auto;
+        padding: 30px;
+    
+    
     .logo {
-        width: 30%;
+    
       }
-    .footer-top{flex-direction: column;}
-    .footer-bottom{;}
-    .footer-bottom-right{;}
-    .contact{;}
-    .social{justify-content: center;}
+    .footer-top{display:inline-flex;
+        flex-direction:}
+        .footer-bottom-left { display: inline-flex;}
+    .footer-bottom{display:flex;}
+    .footer-bottom-right{display: inline-flex;
+    flex-direction: row;}
+   div .contact {display:inline-flex;}
+    .social{justify-content:;}
     .attribution{;}
