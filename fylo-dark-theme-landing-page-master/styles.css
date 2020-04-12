@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Raleway:wght@100;200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
 
 * {
 box-sizing: border-box;
@@ -27,7 +28,7 @@ ul { list-style-type: none;
 
     button {
         color:#fff;
-        background: blue; 
+        background:hsl(224, 93%,58%); 
         padding: 10px 30px;
         border: none;
 border-radius: 2px;
@@ -40,27 +41,28 @@ border-radius: 2px;
     img { 
         max-width: 100%;
     }
-    h3,
-    h6,
+    h1,
+    h2,
     button,
     nav {
         font-family: 'Raleway' , sans-serif;
-        color: var(--very_dark_blue);
+        color: hsl(243, 87%, 12%);
     }
     button,
     nav { 
         font-weight: 400;
     }
-    h3{
-        font-size: 40px;
+    h1,h2 {
+        font-weight: 700;
     }
     p,
     nav,
     button,
     a {
         font-size:12px;
-        color: var(--very_dark_blue)
+        color: hsl(243, 87%, 12%);
     }
+    
     #logo {display: flex;}
     nav {margin-bottom: 100px;}
     nav ul {display: flex;
@@ -100,7 +102,7 @@ border-radius: 2px;
      .btn {color;}
      header {margin:30px;}
      
-     h6{
+     h2{
          font-size: 30px;}
      span {;}
      
@@ -108,16 +110,31 @@ border-radius: 2px;
      
      
      /* services */
-     .services{ 
-         background: ;
-         margin: 100px 0 0;
+     .services{ display: grid;
+         background:hsl(240, 93%, 58%) ;
+         margin: 100px 0;
          padding: 40px 0;
          position: relative;
+         margin-bottom: 0;
+    }
+    .services::before {
+        content: "";
+        width: 100%;
+        height: 61px;
+        background-image: url(./images/bg-curvy-desktop.svg);
+        background-size:cover;
+        position:absolute;
+        top: -61px;
+        left: 0;
+        z-index:1;
+    }
+    .services h1{
+        font-size:2em;
     }
      .service { margin: auto;
         padding: 40px 20px 20px 20px ;
          display: ;}
-     .service1 {display:inline-flex;}
+     
     
      /* End of services */
     
@@ -129,35 +146,85 @@ border-radius: 2px;
     
     
     /* Testimonials */
-    .testimonials {display:inline-flex;}
-    .test {;}
+    .testimonials {display:;
+    margin-top: 20px;
+    width: 70%;
+    padding: 15px;
+    background: #fff;
+}
+    .test img{display:flex ;
+        width:50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+    .test h2{margin:0;}
+    .test p{ margin:0;}
     /* End of testimonials */
     
     
     /* contact */
-    .subscribe{margin:0 auto;
+    .subscribe{ background:hsl(238, 22%, 44%);
+        margin:0 auto;
         border-radius: 8px;
     border: 2px solid blue;}
+    .subscribe p,
+    .subscribe h1 {color: white;}
+    .subscribe > div {align-items: center;}
+    .subscribe > div:first-child {
+        flex:0.8;
+        margin-right: 20%;
+    }
+    .subscribe input {width:80%;
+    border:none;}
+    .subscribe .btn{ margin-bottom: 20px;
+    }
     
     /* End of contact */
     
     
     /* footer */
-    .footer {
-        display: flex;
+    footer { 
+        padding: 30px 0;
+        background: hsl(243, 87%, 12%)
+    }
+  footer .footer {
+        display:flex;
+        text-align: left;
+        flex-direction: ;
         margin:0 auto;
-        padding: 30px;
-    
-    
-    .logo {
-    
-      }
-    .footer-top{display:inline-flex;
-        flex-direction:}
-        .footer-bottom-left { display: inline-flex;}
-    .footer-bottom{display:flex;}
-    .footer-bottom-right{display: inline-flex;
-    flex-direction: row;}
-   div .contact {display:inline-flex;}
-    .social{justify-content:;}
-    .attribution{;}
+        
+    }
+footer a,
+footer li > p {
+    color:#fff;
+
+}
+
+footer  .footer-top{ flex:;
+width: 30%; }
+ 
+   footer .footer-bottom{flex-direction:row;
+
+    display:flex;} 
+    .info{
+        flex-basis: 20%;
+    }
+   .info p > img {flex-direction:;
+    width: 10%;
+        flex: ;
+    }
+    .info li {text-decoration: none;}
+    footer .footer-bottom ul {
+        padding-left: 0;
+        margin-bottom: 20px;
+    }
+    footer ul li {
+        margin-bottom: 8px;
+    }
+    footer .social{ 
+        justify-content: end;}
+ 
+   div .contact {display:}
+    .social  {justify-content:;}
+
