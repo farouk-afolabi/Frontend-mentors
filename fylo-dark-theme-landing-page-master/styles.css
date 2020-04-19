@@ -6,21 +6,48 @@ box-sizing: border-box;
 }
 body { 
     font-family : 'Open Sans',sans-serif ;
-    font-size: 14px;
+    
     text-decoration:none ;
     
     font-weight: 400;
     margin: 0;
     background-color:#181f2a;
-    padding:0;
-    color:white;
+    padding:0;  
     text-align: center;
 }
 
 a{
     text-decoration: none;
+    color: #999;
+    font-family:  "Raleway", sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+    ;
 }
- 
+
+
+p {
+    font-size: 14px;
+    color: #999;
+    line-height: 1.5;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+}
+h2 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    color: #fff;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+  
+  input {
+    outline: none;
+  }
 
 ul { list-style-type: none;
     margin:0;
@@ -29,24 +56,25 @@ ul { list-style-type: none;
     button {
         color:#fff;
         background:hsl(224, 93%,58%); 
-        padding: 10px 30px;
+        width: 15rem;
+        height: 3rem;
+        border-radius: 3rem;
         border: none;
-border-radius: 2px;
+        cursor: pointer;
+        font-weight: 700;
+        outline: none;
     }
-    input { padding: 8px 20px;
-        border-radius: 2px ;
-        border: 1px solid var(--light_gray);
+    button:hover {
+        background-image: linear-gradient(#65e2d9, #339ecc) ;
+        
+    }
 
-    }
-    img { 
-        max-width: 100%;
-    }
     h1,
     h2,
     button,
     nav {
-        font-family: 'Raleway' , sans-serif;
-        color: hsl(243, 87%, 12%);
+        font-family: "Raleway" , sans-serif;
+        color:white;
     }
     button,
     nav { 
@@ -60,27 +88,45 @@ border-radius: 2px;
     button,
     a {
         font-size:12px;
-        color: hsl(243, 87%, 12%);
+        
     }
     
-    #logo {display: flex;}
-    nav {margin-bottom: 100px;}
-    nav ul {display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        margin-right: ;
-    }
-    nav ul li {
-        margin right: 30px;
+    
+    nav  {display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        background-color: #1c2431;
+    
+          
     }
 
 /* navigation */
-.navigation{font-family: ;
+.navigation{
     font-weight:400;
     }
+   nav .nav > ul {display: flex;
+       flex-direction: row;
+       margin-right: 30px;
     
-     .logo{;}
-     .nav {;}
+   } 
+       
+   
+   .nav ul >li {
+       margin-left: 40px;
+   }
+   nav .nav a {
+    padding: 3px;
+    font-size: 40px;
+  }
+  nav .nav a:hover {
+    border-bottom: 1px solid #999;
+  }
+  nav#logo {
+      width: 37%;
+  }
+
+    
      
      
      /* End of navigation */
@@ -103,8 +149,9 @@ border-radius: 2px;
      header {margin:30px;}
      
      h2{
-         font-size: 30px;}
-     span {;}
+         font-size: 30px;
+        }
+     
      
      /* End of main banner */
      
@@ -190,10 +237,11 @@ border-radius: 2px;
     }
   footer .footer {
         display:flex;
-        text-align: left;
-        flex-direction: ;
-        margin:0 auto;
         
+        flex-direction: row ;
+        margin:0 auto;
+        justify-content: flex-start;
+        align-items: flex-start;
     }
 footer a,
 footer li > p {
@@ -204,11 +252,13 @@ footer li > p {
 footer  .footer-top{ flex:;
 width: 30%; }
  
-   footer .footer-bottom{flex-direction:row;
+   footer .footer-bottom{display:flex;
+       flex-direction:row;
+      
 
-    display:flex;} 
-    .info{
-        flex-basis: 20%;
+    } 
+    .info{ 
+        flex-basis:;
     }
    .info p > img {flex-direction:;
     width: 10%;
@@ -216,15 +266,21 @@ width: 30%; }
     }
     .info li {text-decoration: none;}
     footer .footer-bottom ul {
-        padding-left: 0;
-        margin-bottom: 20px;
+        padding-left: 50px;
+        margin-top:40px;
+        margin-left: 20px;
+        text-align: left;
     }
     footer ul li {
-        margin-bottom: 8px;
+        margin-bottom: 10px;
     }
     footer .social{ 
         justify-content: end;}
  
-   div .contact {display:}
-    .social  {justify-content:;}
-
+   
+    .social  {display: inline-flex;
+        }
+/* Media queries */
+@media screen and (min-width: 601px){
+    
+}
