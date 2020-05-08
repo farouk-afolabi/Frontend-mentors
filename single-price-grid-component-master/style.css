@@ -1,0 +1,67 @@
+body {
+    background-color: burlywood;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+}
+h1 {color:blue;}
+h2 {color: yellow;}
+
+p {color:white;}
+button {width: 80%;
+       height: 2.5rem;
+       border-radius: 0.5rem;
+       background-color:yellow;
+    }
+
+li { list-style: none;
+color: white;
+}   
+.box {display: grid;
+      
+      max-width: 100%;
+      height: auto;
+      justify-content: center;
+     grid-template-areas: "main  main main"
+                          "side aside aside"
+                          ". . ."
+                          ;}
+
+.main {background-color: white;
+grid-area: main;
+justify-self: center;
+padding: 20px 100px;
+}
+
+.side{ background-color:hsl(218, 22%, 67%);
+    grid-area: side;
+    padding: 20px;
+    }
+
+.aside {background-color:pink;
+    grid-area: aside;
+    text-decoration: none;
+    padding: 20px ;
+}
+.hi {color:white;}
+.hello {color:beige;}
+.attribution{ display: flex;
+justify-content: center;} 
+ 
+
+@media only screen and ( max-width:768px ){
+    /* for mobile devices */
+   body {background-color:lightblue;
+         font-family: 'Karla', sans-serif;
+         font-size: 10px;
+        } 
+   .box {display: grid;
+         margin: 10px;
+        grid-template-areas: "main main main"
+                             "side side side"
+                             "aside aside aside";
+        
+                             }
+   .main{ padding: 20px;
+        
+        }                          
+}
