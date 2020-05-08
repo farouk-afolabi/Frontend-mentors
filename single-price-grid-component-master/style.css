@@ -3,34 +3,43 @@ body {
     font-family: 'Karla', sans-serif;
     font-size: 16px;
 }
+h1 {color:blue;}
+h2 {color: yellow;}
+
+p {color:white;}
+button {width: 80%;
+       height: 2.5rem;
+       border-radius: 0.5rem;
+       background-color:yellow;
+    }
+
+li { list-style: none;
+color: white;
+}   
 .box {display: grid;
+      justify-content: center;
      grid-template-areas: "main  main main"
-                          "aside side side"
+                          "side aside aside"
                           ". . ."
-                           ;
-    ;}
+                          ;}
 
 .main {background-color: white;
 grid-area: main;
 justify-self: center;
-padding: 20px 80px;}
-.side{background-color:green;
-    grid-area: aside;
-    justify-self: end;
-    width: 59%;
-    padding-left:  ;}
-.aside {background-color:pink;
+padding: 20px 100px;
+}
+
+.side{ background-color:hsl(218, 22%, 67%);
     grid-area: side;
-    text-decoration: none;
-    justify-self:start ;
-    padding-left: 0%;
-    width: 60%;
- ul > li {text-decoration: none;}
-.attribution 
-h1 {color:blue;}
-h2 {color: yellow;}
-p {color: black;}
-button {width: 30%;
-       height: 3rem;
-       border-radius: 2rem;
+    padding: 20px;
     }
+
+.aside {background-color:pink;
+    grid-area: aside;
+    text-decoration: none;
+    padding: 20px ;
+}
+.hi {color:white;}
+.hello {color:beige;}
+.attribution{ display: flex;
+justify-content: center;} 
