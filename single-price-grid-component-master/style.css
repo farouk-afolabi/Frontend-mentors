@@ -17,6 +17,9 @@ li { list-style: none;
 color: white;
 }   
 .box {display: grid;
+      
+      max-width: 100%;
+      height: auto;
       justify-content: center;
      grid-template-areas: "main  main main"
                           "side aside aside"
@@ -43,3 +46,22 @@ padding: 20px 100px;
 .hello {color:beige;}
 .attribution{ display: flex;
 justify-content: center;} 
+ 
+
+@media only screen and ( max-width:768px ){
+    /* for mobile devices */
+   body {background-color:lightblue;
+         font-family: 'Karla', sans-serif;
+         font-size: 10px;
+        } 
+   .box {display: grid;
+         margin: 10px;
+        grid-template-areas: "main main main"
+                             "side side side"
+                             "aside aside aside";
+        
+                             }
+   .main{ padding: 20px;
+        
+        }                          
+}
