@@ -47,12 +47,7 @@ h2 {
     height: auto;
   }
   
-  input {
-    outline: none;
-    height: 2rem;
-        border-radius: 1rem;
-        width: 18rem
-  }
+
 
 ul { list-style-type: none;
     margin:0;
@@ -79,7 +74,8 @@ ul { list-style-type: none;
     nav {
         font-family: "Raleway" , sans-serif;
         font-weight: 700;
-        color:white;
+
+        color: #fff;
     }
     button,
     nav { 
@@ -91,76 +87,160 @@ ul { list-style-type: none;
     button,
     a {
         font-size:12px;
+
+        color:white;
+
         
     }
     
-    
+    /* navigation */
     nav  {display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: flex-end;
-        background-color: #1c2431;
-    
-          
-    }
-
-/* navigation */
-.navigation{
-    font-weight:400;
-    }
-   nav .nav > ul {display: flex;
-       flex-direction: row;
-       margin-right: 30px;
-    
-   } 
+        }
+     #logo {max-width:100%;
+            height: auto;
+            margin: 10px
+           }
+               
+     .nav > ul {display:flex;
+               margin: 20px 0px;}
+        
+     .nav ul >li {
+                margin:0px 10px;
+     }
+     .navigation{ margin:10px 0px;
+        font-weight:400;
+       }
        
+    /* End of Navigation */
+
+/* Main Banner */
+  .main-banner {margin: 30px 40px; }
+
+   .btn  { margin:20px;}
+       
+   /* End of Main Banner */
+
+   /* services */
+   .services { display: flex;
+             flex-direction: column;
+             }
+   .service { margin : 20px 49px;}
+   .service > img { margin: 20px 35%;}
+   .service1 { margin : 20px 49px;}
+   .service1 > img { margin: 20px 35%;}
+   .service2 {margin : 20px 49px;}
+   .service2 > img { margin: 20px 35%;}
+   .service3 {margin : 20px 49px;}
+   .service3 > img { margin: 20px 35%;}
+   /* END OF SERVICES */
+
+
+   /* SUB BANNER */
+   .sub-banner {display:flex;
+               flex-direction: column;
+            margin: 30px 12px;
+        }
+    .subs{margin: 40px 0px;}
+      
    
-   .nav ul >li {
-       margin-left: 40px;
-   }
+   /* END OF SUB BANNER */
+
+   /* TESTIMONIALS */
+   .testimonials{margin:0px  20px;}
+   .test { background:#1c2431; 
+           margin: 20px;
+           padding: 20px;
+        }
+
+   .test img{
+    width:30px;
+    height: 30px;
+    border-radius: 50%;
+    
+}
+.profile-name h2,span { margin: 0px;
+    color: #fff; 
+    font-size: 10px;
+}
+.box-image {display: flex;}
+/* END OF TESTIMONIALS */
+   
+ /* CONTACT */
+  .subscribe {background:#1c2431;
+    width: 90%;
+margin: 30px 20px;
+padding:20px;}
+.subscribe input {
+    outline: none;
+    height: 3rem;
+        border-radius: 2rem;
+        width: 20rem;
+        margin:0px 0px;
+}
+.button { width:20rem;}
+/* END OF CONTACT */
+
+/* FOOTER */
+ .foot {display:flex;
+       flex-direction: column;
+     flex-wrap: nowrap;
+}
+ .footer-top {margin: 30px;}
+ .footer-bottom ul{ margin:20px 0px;}
+ .footer-bottom li { margin:5px 20px;}
+
+ .social  {
+     display: flex;
+             flex-direction: row;}
+            
+ /* END OF FOOTER */
+
+ /* FOR DESKTOP */
+  @media only screen and (min-width: 768px){
+     /* navigation */
+   
    nav .nav a {
     padding: 3px;
-    font-size: 40px;
+    font-size: 20px;
+    color: #fff;
   }
   nav .nav a:hover {
-    border-bottom: 1px solid #999;
+        border-bottom: 1px solid #999;
   }
-  nav#logo {
-     max-width:37%;
-    height: auto;
-  }
+  
+ /* End of navigation */
 
-    
-     
-     
-     /* End of navigation */
      
      
      /* main banner */
     
      .main-banner { display: flex;
-        flex-direction: row;
+
+        flex-direction: column;
          
-    justify-content: space-between;}
+    }
      .main {
          max-width: 100%;
-         width: 1000px;
-         margin: 0 auto;
-         padding :30px;
-         order: 2;
-    }
-     .mains {order: 1;
-        align-self: center;
+         align-self: center;
+         height: auto;
+         order: 1;
 
     }
-     
+     .mains {order: 2;
+        align-self:center;
+        
+
+    }
+    .mains > .btn {margin:10px 20rem;}
     
      
-     header {margin:30px;}
+     header {margin: 20px 0px;}
      
-     h2{
-         font-size: 30px;
-        }
+     .title{
+         font-size: 30px; }
+
      
      
      /* End of main banner */
@@ -168,167 +248,158 @@ ul { list-style-type: none;
      
      /* services */
      .services{ display: grid;
-        grid-template-columns: repeat(2,1fr);
-        justify-items: center;
+
+        grid-template-areas: "service  service1"
+                             "service2 service3";
+    
         
-         margin: 100px 0;
-         padding: 40px 0;
-         position: relative;
-         margin-bottom: 0;
+         margin:10px 0px;
+         padding:;
+         
+        
     }
-    .service ::before {
-        content: "";
-        width: 100%;
-        height: 61px;
-        background-image: url(./images/bg-curvy-desktop.svg);
-        background-size:cover;
-        position: absolute;
-        top: -61px;
-        left: 0;
-        z-index:
-    }
+    
+    
     .service h1{
-        font-size:2em;
+        font-size: 30px;
     }
-     .service { margin: auto;
-        padding: 40px 20px 20px 20px ;
+     .service {grid-area:service;
+              margin:30px 50px ;
+              padding:0px 50px;}
+     .service1 {grid-area:service1;
+               margin: 20px 50px;
+               padding:0px 50px;}
+               
+     .service2 { grid-area:service2;
+                margin: 20px 50px;
+                padding:0px 50px;}
+     .service3 {grid-area:service3;
+                margin: 30px 50px;
+                padding:0px 50px;}
     
      
-     }
+     
+
      /* End of services */
     
      /* sub banner */
      .sub-banner{ display: flex;
-        justify-content: space-between;
 
+                 flex-direction: row;
+        
+        
     }
-     .sub{order:2;}
-     .subs{order:1;}
+     .sub{order: 1;
+          padding: 0px 30px;
+         }
+     .subs {order: 2;
+           margin:30px 20px;
+        }
      .subs h1{ font-size :2em;}
-    /*End of sub banner */
+     .subs a{ text-decoration: underline;}
+    /* End of sub banner */
     
     
     /* Testimonials */
-    .testimonials {
-         width: 70%;
-         background: #1c2431;
-         
-         
-}
- .test { display: flex;
-flex-direction: row ;
-align-items: flex-start;
-padding: 20px 20px 40px 20px;
-margin: 40px 40px 40px 0;
+    .testimonials{ margin: 150px;}
+    .tester { display:flex;
+             width: 100%;
+             
+            }
+ .test {  background:#1c2431;
+          margin:0px 20px;
+          padding:10px 40px 20px 20px;
+       }
 
-
-
- }
     .test img{
         width:30px;
         height: 30px;
         border-radius: 50%;
-        margin-right: 10px;
-    }
-    .test h2{ margin:0 ;
-        align-self: flex-start;
-    }
-    .test p { margin: 0;}
-    
-    
         
+    }
+    .test h2, span {
+        margin:0px;
+        
+    }
+    .box-image {display:flex;
+        color: white;}
+    .profile-name h2, .profile-name span { color:white;
+                        font-size: 13px;
+                        margin:0px;}   
+    
+    
+   
+
     /* End of testimonials */
     
     
     /* contact */
     .subscribe{ background:#1c2431;
-        width: 50%;
-        display: flex;
-        justify-content: flex-end;
+        width: 60%;
+        display:flex;
+        flex-direction: column;
+        margin: 0px 200px;
+        padding:30px 30px ;
+    
+        flex-wrap: wrap;
         
-        
-        margin:0 auto;
-        border-radius: 8px;
-    border: 2px solid #1c2431}
-    .subscribe p,
-    .subscribe h1 {color: white;}
-    .subscribe > div {align-items: center;}
-    .subscribe > div:first-child {
-        flex:0.8;
-        margin-right: 20%;
+    
+    
     }
-    .subscribe input { width: 50%;
-
+    .subscribe p {  margin: 10px 60px ;
+                  color:white;}
+    .subscribe h1 {color: white;
+                   margin: 10px 0px 10px 30%}
+    .subscribe input {
+        outline: none;
+        height: 2rem;
+            border-radius: 1rem;
+            width: 30rem;
+            margin:20px 5%;
+      }
+    .button {  width: 10rem;
         height: 2rem;
         border-radius: 2rem;
-    border: none;}
-    .subscribe .btn{ margin-bottom: 20px;
+        margin:20px 0px ;
+                    
     }
+    form{display:flex;}
+    
+
     
     /* End of contact */
     
     
     /* footer */
     footer { 
-        
-        background: hsl(243, 87%, 12%)
 
+      /*  background:#1c2431; */
+        background:black;
     }
-  footer .foot {
+   .foot {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        flex-direction: column;
+        padding: 50px 10px;
     }
-footer a,
-footer li > p {
-    color:#fff;
 
-}
 
-footer  .footer-top{ max-width: 30%;
+
+  .footer-top{ margin : 20px;
 } 
  
-   footer .footer-bottom{display:flex;
-       flex-direction:row;
-       padding-right: 30%;
-      
+    .footer-bottom {display: flex;
+       flex-direction: row;
+       padding: 0px 0px 0px 0px ;
+       margin: 20px ;
+    
+   }
+   .footer-bottom li { margin:10px 20px;
+                     }
+   .social{ display:flex;
+   }
+   .social >li { margin:10px 5px;}
 
-    } 
-    .info{ 
-        flex-basis:auto;
     }
-   .info p > img {flex-direction:;
-    width: 10%;
-        flex: ;
-    }
-    .info li {text-decoration: none;}
-    footer .footer-bottom ul {
-        padding-left: 50px;
-        margin-top:40px;
-        margin-left: 20px;
-        text-align: left;
-    }
-    footer ul li {
-        margin-bottom: 10px;
-    }
-     .social  { display: flex;
-     }
- .social li { margin-left: 10px;
 
- }
-   
 
-/* Media queries */
-@media screen and (max-width: 768px){ .navigation {display: flex;
-flex-wrap: wrap;
-flex-direction:;
-text-align: center;
 
-}
-.nav{ display:flex;
-    font-weight: 600;
-    font-size: small;
-
-}
-
-}
