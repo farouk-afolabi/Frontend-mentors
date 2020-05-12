@@ -47,7 +47,7 @@ h2 {
     height: auto;
   }
   
-  
+
 
 ul { list-style-type: none;
     margin:0;
@@ -74,8 +74,8 @@ ul { list-style-type: none;
     nav {
         font-family: "Raleway" , sans-serif;
         font-weight: 700;
+
         color: #fff;
-        
     }
     button,
     nav { 
@@ -87,6 +87,7 @@ ul { list-style-type: none;
     button,
     a {
         font-size:12px;
+
         color:white;
 
         
@@ -210,11 +211,13 @@ padding:20px;}
   }
   
  /* End of navigation */
+
      
      
      /* main banner */
     
      .main-banner { display: flex;
+
         flex-direction: column;
          
     }
@@ -237,6 +240,7 @@ padding:20px;}
      
      .title{
          font-size: 30px; }
+
      
      
      /* End of main banner */
@@ -244,6 +248,7 @@ padding:20px;}
      
      /* services */
      .services{ display: grid;
+
         grid-template-areas: "service  service1"
                              "service2 service3";
     
@@ -274,10 +279,12 @@ padding:20px;}
     
      
      
+
      /* End of services */
     
      /* sub banner */
      .sub-banner{ display: flex;
+
                  flex-direction: row;
         
         
@@ -303,6 +310,7 @@ padding:20px;}
           margin:0px 20px;
           padding:10px 40px 20px 20px;
        }
+
     .test img{
         width:30px;
         height: 30px;
@@ -321,6 +329,7 @@ padding:20px;}
     
     
    
+
     /* End of testimonials */
     
     
@@ -356,12 +365,14 @@ padding:20px;}
     }
     form{display:flex;}
     
+
     
     /* End of contact */
     
     
     /* footer */
     footer { 
+
       /*  background:#1c2431; */
         background:black;
     }
@@ -389,5 +400,6 @@ padding:20px;}
    .social >li { margin:10px 5px;}
 
     }
+
 
 
